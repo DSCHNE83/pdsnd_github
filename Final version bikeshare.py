@@ -7,6 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv',
               'Los Angeles': 'los_angeles.csv'
               'Denver': 'denver.csv' }
+
 # Add Month and Day datas
 MONTH_DATA = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -132,9 +133,21 @@ def station_stats(df):
     common_start_station = df['Start Station'].mode()[0]
     print("The most commonly used start station:" ,common_start_station)
 
+    # TO DO: display most erliest used start station
+    earliest_start_station = df['Start Station'].min
+    print("The most earliest used start station:" ,common_start_station)
+
+    # TO DO: display most latest used start station
+    latest_start_station = df['Start Station'].max
+    print("The most latest used start station:" ,common_start_station)
+
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
     print("The most commonly used end station:" ,common_end_station)
+
+    # TO DO: display most unsed end station
+    unused_end_station = df['End Station'].count_values().min
+    print("The most unused end station:" ,common_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
     combination_stat_end = (df['Start Station'] + "||" + df['End Station']).mode()[0]
