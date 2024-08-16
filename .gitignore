@@ -1,3 +1,4 @@
 .github/**
 *.py
 readme.txt
+*.csv

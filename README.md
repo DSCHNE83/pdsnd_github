@@ -19,4 +19,4 @@ It's important to give proper credit. Add links to any repo that inspired you or
 + Worked in Python on Bikeshare so that it is more **user** friendly 
 + Add Los _Angeles_ to the **CITY_DATA selection**
 + Add _Denver_ to the **CITY_DATA selection**
- 
++ Forgot to add the csv files to the pdsnd_github and add the csv to .gitignore
