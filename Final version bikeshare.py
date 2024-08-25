@@ -5,6 +5,9 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+              'washington': 'washington.csv',
+              'Los Angeles': 'los_angeles.csv'
+              'Denver': 'denver.csv' }
 # Add Month and Day datas
 MONTH_DATA = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
